@@ -5,5 +5,4 @@ fun main(){
     var nama = "Brian Yuko" // Var object Mutable atau dapat diubah
     nama = "Brian Yuko Putra" // Ini bisa dijalankan karena var dapat diubah
     println("Nama saya adalah $nama, memiliki tinggi badan $tinggiBadan")
-
 }
