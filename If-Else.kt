@@ -22,4 +22,15 @@ fun main(){
                         "$nama tidak lulus matematika"
                 }
     println("hasilnya adalah $lulus")
+
+    // Nested If Else
+    val umur = 19
+    val standarUmur = 19
+    if (umur > standarUmur){
+        println("$nama memiliki umur lebih, bisa masuk ke bioskop")
+    }else if (umur == standarUmur){
+        println("$nama memiliki umur pas, bisa masuk ke bioskop")
+    }else{
+        println("$nama belum cukup umur")
+    }
 }
