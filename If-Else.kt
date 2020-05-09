@@ -33,4 +33,16 @@ fun main(){
     }else{
         println("$nama belum cukup umur")
     }
+
+    // If Untuk Check Array
+    val nilaiA = intArrayOf(80,81,82,83,84,85,86,87,88,89)
+    val nilaiB = intArrayOf(71,72,73,74,75,76,77,78,79)
+    val nilaiSiswa = 70
+    if (nilaiSiswa in nilaiA){
+        println("Siswa mendapatkan nilai A")
+    }else if (nilaiSiswa in nilaiB){
+        println("Siswa mendapatkan nilai B")
+    }else{
+        println("Siswa mendapatkan nilai C")
+    }
 }
