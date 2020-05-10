@@ -22,4 +22,28 @@ fun main(){
         }
     }
     println("Jumlah gold $gold, Jumlah Silver $silver")
+
+    //Latihan 2
+    //1. Input nama
+    //2. cek bule atau bukan
+    //3. tentukan asal negaranya
+    val orangIndonesia = arrayOf("Juminten", "Purwoto", "Wahyudi")
+    val orangUzbek = arrayOf("Miatov", "Modric", "Rudolf")
+    val orangJapan = arrayOf("Saske", "Orizawa", "Hyuka")
+    println("Masukan Nama")
+    val nama = readLine()
+    when (nama) {
+        in orangIndonesia -> {
+            println("$nama bukan bule dan orang indonesia")
+        }
+        in orangUzbek -> {
+            println("$nama orang bule dan orang uzbek")
+        }
+        in orangJapan -> {
+            println("$nama orang bule dan orang japan")
+        }
+        else -> {
+            println("Nama $nama tidak ada")
+        }
+    }
 }
