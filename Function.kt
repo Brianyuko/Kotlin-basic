@@ -2,6 +2,7 @@ fun main(){
 
     // Function pada kotlin
     // Perhitungan Rumus
+    printHasil() //VOID
     print("Masukan Rumus: ")
     when (readLine()!!.toLowerCase()) {
         "segitiga" -> {
@@ -29,4 +30,10 @@ fun luasSegitiga(alas: Int , tinggi: Int): Int {
 }
 fun luasPersegi(panjang: Int, lebar: Int): Int{
     return panjang*lebar
+}
+// Function yang tidak mengembalikan hasil apa apa
+// Sebenarnya me return tipe data :Unit, tapi tidak perlu explicit ditulis
+// Jadi jika ada :Unit, berarti itu cuma VOID biasa seperti di java, tidak return sesuatu
+fun printHasil(){
+    println("Tidak return nilai apa apa")
 }
