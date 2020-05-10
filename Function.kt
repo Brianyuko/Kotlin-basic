@@ -2,6 +2,9 @@ fun main(){
 
     // Function pada kotlin
     // Perhitungan Rumus
+    print("Masukan Angka Faktorial: ")
+    val angkaFactorial = readLine()!!.toInt()
+    println("Angka faktorial dari $angkaFactorial adalah ${factorial(angkaFactorial)}")
     printHasil() //VOID
     print("Masukan Rumus: ")
     when (readLine()!!.toLowerCase()) {
@@ -23,9 +26,11 @@ fun main(){
             println("Rumus tidak ada")
         }
     }
+    println("ini nilai default ${luasSegitiga()}")
+    println("Bisa diganti langsung ${luasSegitiga(tinggi = 40)}")
 }
-// Nama fungsi , (paramater: tipeData), :tipeData yang ingin dikembalikan
-fun luasSegitiga(alas: Int , tinggi: Int): Int {
+// Nama fungsi , (paramater: tipeData = nilaiDefault jika ada), :tipeData yang ingin dikembalikan
+fun luasSegitiga(alas: Int = 20 , tinggi: Int = 30): Int {
     return (alas*tinggi)/2
 }
 fun luasPersegi(panjang: Int, lebar: Int): Int{
@@ -36,4 +41,11 @@ fun luasPersegi(panjang: Int, lebar: Int): Int{
 // Jadi jika ada :Unit, berarti itu cuma VOID biasa seperti di java, tidak return sesuatu
 fun printHasil(){
     println("Tidak return nilai apa apa")
+}
+//Function Recursive
+fun factorial(angka: Int): Int{
+    return if (angka == 1){
+        angka
+    }else
+        angka*factorial(angka-1) //Recursive
 }
