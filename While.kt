@@ -12,4 +12,16 @@ fun main(){
         }
         angka++
     }
+
+    //Do While
+    println("Masukan Nama")
+    var nama = readLine()
+    var nilai =""
+    var total = 0
+    do {
+        println("Masukan Nilaimu: ")
+        nilai = readLine()!!
+        total = total + nilai.toInt()
+    }while (nilai != "0") // Jika syarat didalam while memenuhi, maka do akan terus berjalan
+    println("Total nilai $nama adalah: $total") // Jika syarat di dalam while tidak terpenuhi, do akan berhenti berjalan
 }
